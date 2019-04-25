@@ -1,3 +1,4 @@
-import { htpp } from './http'
 
-export const fetchRepos = user => htpp.get(`users/${user}`)
+import { http } from './http'
+
+export const fetchRepos = user => http.get(`users/${user}/repos`)
